@@ -1,0 +1,40 @@
+{
+  "manifest_version": 3,
+  "name": "Kyo-conseil - Junction 2023",
+  "short_name": "Kyo-conseil-junction2023",
+  "version": "0.0.1",
+  "author": "Bendjeddou Chahine",
+  "description": "Junction Algeries 2023, challenge 1, a chrome extension powered by ChatGPT to generate a response to your emails",
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "storage",
+    "unlimitedStorage",
+    "identity"
+  ],
+  "host_permissions": ["*://mail.google.com/*", "https://www.googleapis.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://mail.google.com/*"],
+      "js": ["src/content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "action": {
+    "default_icon": {
+      "16": "icon.png",
+      "32": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["dist/script.js", "./icon.png"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
