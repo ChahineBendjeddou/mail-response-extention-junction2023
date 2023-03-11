@@ -15,8 +15,10 @@ This Chrome Extension is the solution to the first challenge of Junction Algeria
 2. get your API key from [OpenAI](https://openai.com/) and paste it in the extension's options page.
 3. Navigate to your email client and compose a new email Response.
 4. Click on the KYO-conseil icon in Toolbar.
+
    ![Toolbar](toolBar.png)
    ![KYO-conseil is thinking](thinking.png)
+
 5. Click the "Send" button to send the email.
    ![The reply](./reply.png)
 
