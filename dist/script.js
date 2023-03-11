@@ -2,6 +2,7 @@
   let found = false;
   async function generateResponseWithChatGPT3({ message, mailFrom }) {
     // set up API parameters
+    const apiKey = "Your API Key"; //TODO Change this to your API Key
     const apiUrl =
       "https://api.openai.com/v1/engines/text-davinci-003/completions";
     const prompt = `
@@ -17,7 +18,6 @@
     // end of refrence
     `;
     const maxTokens = 1024;
-    const apiKey = "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";
 
     // send API request
     const response = await fetch(apiUrl, {
