@@ -17,7 +17,7 @@
     // end of refrence
     `;
     const maxTokens = 1024;
-    const apiKey = "Your-openai-api-key";
+    const apiKey = "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";
 
     // send API request
     const response = await fetch(apiUrl, {
@@ -32,8 +32,8 @@
       }),
     });
     const data = await response.json();
-    console.log(data.choices[0].text);
-    return data.choices[0].text;
+    console.log(data?.choices[0]?.text);
+    return data?.choices[0]?.text;
   }
 
   function createBtn(event) {
