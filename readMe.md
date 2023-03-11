@@ -12,9 +12,10 @@ This Chrome Extension is the solution to the first challenge of Junction Algeria
 ## How to Use
 
 1. Install the KYO-conseil Email Auto-Responder Chrome Extension from the Chrome Web Store.
-2. Navigate to your email client and compose a new email Response.
-3. Click on the KYO-conseil icon in Toolbar.
-4. Click the "Send" button to send the email.
+2. get your API key from [OpenAI](https://openai.com/) and paste it in the extension's options page.
+3. Navigate to your email client and compose a new email Response.
+4. Click on the KYO-conseil icon in Toolbar.
+5. Click the "Send" button to send the email.
 
 ## Privacy and Security
 
