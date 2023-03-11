@@ -17,7 +17,7 @@
     // end of refrence
     `;
     const maxTokens = 1024;
-    const apiKey = "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";
+    const apiKey = "Your-openai-api-key";
 
     // send API request
     const response = await fetch(apiUrl, {
